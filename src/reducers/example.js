@@ -1,4 +1,4 @@
-const example = (state = [], action) => {
+const items = (state = [], action) => {
     switch (action.type) {
       case 'EXAMPLE_ADD':
         return [
@@ -20,5 +20,5 @@ const example = (state = [], action) => {
     }
   }
   
-  export default example
+  export default items
   

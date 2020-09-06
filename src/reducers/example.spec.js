@@ -1,15 +1,15 @@
-import example from './example'
+import items from './example'
 
 describe('example reducer', () => {
   it('should handle initial state', () => {
     expect(
-      example(undefined, {})
+      items(undefined, {})
     ).toEqual([])
   })
 
   it('should handle EXAMPLE_ADD', () => {
     expect(
-      example([], {
+      items([], {
         type: 'EXAMPLE_ADD',
         text: 'Run the tests',
         id: 0
@@ -25,7 +25,7 @@ describe('example reducer', () => {
 
   it('should handle TOGGLE_TODO', () => {
     expect(
-      example([
+      items([
         {
           text: 'Run the tests',
           done: false,
